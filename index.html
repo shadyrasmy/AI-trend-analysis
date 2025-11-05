@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAVIO AI – Trend Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes background-pan {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      body {
+        background: radial-gradient(circle at 10% 10%, rgba(4,12,30,1), rgba(10,16,32,1));
+        background-size: 200% 200%;
+        animation: background-pan 30s ease infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-dropzone": "https://aistudiocdn.com/react-dropzone@^14.3.8",
+    "framer-motion": "https://aistudiocdn.com/framermotion@^11.5.4"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
